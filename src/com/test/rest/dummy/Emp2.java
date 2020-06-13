@@ -1,6 +1,9 @@
 package com.test.rest.dummy;
 
 public class Emp2 {
+	private String name;
+	private String dob;
+	private String ssn;
 	private String fname;
 	private String lname;
 	
@@ -20,6 +23,5 @@ public class Emp2 {
 	}
 	public void setLname(String lname) {
 		this.lname = lname;
-	}
-	
+	}	
 }
