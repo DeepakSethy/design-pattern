@@ -21,7 +21,7 @@ public class TwoSumInt {
 	}
 
 	public static void main(String[] args) {
-		int nums[] = { 6,1,8,5,3, 2, 4 };
+		int nums[] = { 6, 1, 8, 5, 3, 2, 4 };
 		int target = 11;// 2+4
 		twoSum(nums, target);
 	}
