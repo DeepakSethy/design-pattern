@@ -1,0 +1,11 @@
+package com.test.pack.algo;
+
+public class Interval {
+	int start;
+	int end;
+	
+	public Interval(int start,int end) {
+		this.start = start;
+		this.end = end;
+	}
+}
