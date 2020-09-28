@@ -8,7 +8,7 @@ import java.util.List;
 public class CalendarConflict {
 	public static List<List<Interval>> conflictAppointment(Interval[] intervals) {
 
-		Arrays.sort(intervals, (a, b) -> Integer.compare(a.start, b.start));
+		Arrays.sort(intervals, (a, b) -> Integer.compare(a.start, b.start));// O(n log n)
 		List<List<Interval>> result = new ArrayList<>();
 		HashMap<Interval, Integer> map = new HashMap<>();
 		for (int i = 0; i < intervals.length - 1; i++) {
@@ -20,7 +20,7 @@ public class CalendarConflict {
 					result.add(conflicts);
 				}
 			}
-		}
+		} //O(n^2)
 
 		return result;
 	}
