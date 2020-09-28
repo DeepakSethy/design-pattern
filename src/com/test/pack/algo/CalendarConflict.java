@@ -10,7 +10,7 @@ public class CalendarConflict {
 
 		Arrays.sort(intervals, (a, b) -> Integer.compare(a.start, b.start));
 		List<List<Interval>> result = new ArrayList<>();
-		HashMap<Integer, Integer> map = new HashMap<>();
+		HashMap<Interval, Integer> map = new HashMap<>();
 		for (int i = 0; i < intervals.length - 1; i++) {
 			for (int j = i + 1; j < intervals.length; j++) {
 				if (intervals[i].end > intervals[j].start) {
