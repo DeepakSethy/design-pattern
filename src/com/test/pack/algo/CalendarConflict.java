@@ -3,11 +3,15 @@ package com.test.pack.algo;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.TreeMap;
 
 public class CalendarConflict {
 	public static List<List<Interval>> conflictAppointment(Interval[] intervals) {
-
+		
+		//TreeMap<K, V>
+		//LinkedList ll = new LinkedList<>();
 		Arrays.sort(intervals, (a, b) -> Integer.compare(a.start, b.start));// O(n log n)
 		List<List<Interval>> result = new ArrayList<>();
 		HashMap<Interval, Integer> map = new HashMap<>();
